@@ -1,49 +1,109 @@
-# TELEGRAM REPORT 
-
-TELEGRAM REPORT SCRIPT by  ziddi shop @ziddi-shop ....
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 
 
 
-# Check All Updates Here: 
-https://t.me/ziddi_shop
-
-# How To Install 
-
-Step 1 - Download This Zip File ...
-
-Step 2 -  Now Extract This File Then You Get ZIDDI SHOP ENC.PY FILE ..
-
-Step 3 - ZIDDI SHOP ENC file open in your REPLIT , PYDROID3 YA VISUAL STUDIO choice anyone ...
-
-Step 4 - If You Choice Pydroid3 Ya Visual Studio first Off All You Need Some PiP So Please Install All Pip Pip File Link Below Mention !
-
-  PIP FILE [ https://t.me/ziddi_shop/875]
-
- # NOTE:
- PLEASE INSTALL ALL PIP THEN RUN MY JACK FILE OTHERWISE THIS FILE CANNOT WORK
 
 
+<h2 align="center">
+    ─「Telegram MASS REPORT TOOL」─
 
-# Demo : 
-https://github.com/ziddi-shop/telegram-report.git
+</h2>
+<img src="https://readme-typing-svg.herokuapp.com?color=FF0000&width=420&lines=♦+𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈+𝐙𝐈𝐃𝐃𝐈+🎭">
 
-# For Any kind of Help 
+<p align="center"><img src="logo.png" width="150px" height="150px" alt="insta logo"></p>
+
+<img align="right" alt="count" src="https://count.getloli.com/get/@ziddi-shop?theme=shop">
+    
+<h1 align="center">Telegram MASS REPORT</h1>
+
+🚀 **Automated Telegram Reporting Tool** – Report Telegram accounts in bulk using Python.
+
+## 📌 Features
+- 🔥 Mass Telegram reporting automation
+- 🔑 Uses session-based authentication
+- ⏳ Randomized delays to avoid detection
+- 🖥️ Simple and easy-to-use CLI interface
 
 
-Contact me On Mail      :  <li>shehzadakingziddi@gmail.com   </li> 
-Or On Social media 
-  <li>
-<a href="https://t.me/ziddi_shop"> 
-More Tools </a>
- </li> <li>
-  <a href="https://t.me/ziddi_beatz1"> 
-Telegram  </a> </li> <li>
+---
 
 
-<a href="https://www.buymeacoffee.com/theofficialvkr"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=theofficialvkr&button_colour=BD5FFF&font_colour=ffffff&font_family=Cookie&outline_colour=000000&coffee_colour=FFDD00"></a>
-</li> 
 
-# At Last Remember 
 
-i am Developer 👍
+## ⚠️ Disclaimer
+🚨 **This tool is strictly for educational and research purposes only.** Misuse is **strictly prohibited**. The author holds **no responsibility** for any unintended use.
+
+## 📂 Project Structure
+```
+telegram-report/
+├── main.py   # Main script
+├── README.md # Documentation
+├── LICENSE   # LICENSE
+```
+
+## 🛠️ Installation & Usage
+🛠️ Before You Start
+
+Go to main.py → line 16 & 17 and add your own api_id and api_hash.
+Only then the script will run successfully.
+
+#How To Get Api Id And Api Hash 
+- 📌 **Read Me:** [Click Here](https://te.legra.ph/How-to-Get-Telegram-API-ID--API-Hash-11-17)
+### 1️⃣ Clone the Repository
+```sh
+git clone https://raw.githubusercontent.com/ziddi-shop/telegram-report/main/main.py
+cd telegram-report
+```
+
+### 2️⃣ Install Dependencies
+Ensure you have Python installed, then install required modules:
+```sh
+pip install requests telethon asyncio random 
+```
+
+### 3️⃣ Run the Script
+```sh
+python main.py
+```
+## 🛠️ Installation 2
+
+```
+sudo apt-get update -y
+```
+
+```
+sudo apt-get upgrade -y
+```
+```
+apt install wget -y
+```
+```
+apt install python -y
+```
+```
+pip install requests
+```
+```
+pip install random
+```
+```
+
+pip install telethon
+```
+```
+wget https://raw.githubusercontent.com/ziddi-shop/telegram-report/main/main.py
+```
+```
+python3 main.py
+```
+
+
+
+## 📜 License
+📢 **This project is for educational purposes only. Use it responsibly.**
+
+---
+### 🤝 Connect with Us
+- 📌 **Author:** [Ziddi Shop](https://t.me/nobi_shops)
+- 📢 **Need Help?** Join our Telegram: [nobi_shops](https://t.me/nobi_shops)
