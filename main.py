@@ -29,7 +29,7 @@ class ziddi:
 
     async def start(self):
         await self.client.start()
-        print("Telegram'a bağlandı ✓")
+        print("Connected to Telegram")
 
     async def report_channel(self):
         channel_link = input("Channel links: ").strip() # by @meta_server
