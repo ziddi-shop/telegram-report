@@ -105,5 +105,5 @@ python3 main.py
 
 ---
 ### 🤝 Connect with Us
-- 📌 **Author:** [Ziddi Shop](https://t.me/nobi_shops)
-- 📢 **Need Help?** Join our Telegram: [nobi_shops](https://t.me/nobi_shops)
+- 📌 **Author:** [Ziddi Shop](https://t.me/ziddishop)
+- 📢 **Need Help?** Join our Telegram: [fadingwithher](https://t.me/fadingwithher)
