@@ -43,10 +43,7 @@ telegram-report/
 ```
 
 ## 🛠️ Installation & Usage
-🛠️ Before You Start
 
-Go to main.py → line 16 & 17 and add your own api_id and api_hash.
-Only then the script will run successfully.
 
 #How To Get Api Id And Api Hash 
 - 📌 **Read Me:** [Click Here](https://te.legra.ph/How-to-Get-Telegram-API-ID--API-Hash-11-17)
